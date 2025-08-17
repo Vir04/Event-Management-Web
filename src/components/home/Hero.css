@@ -1,0 +1,31 @@
+.hero-slider {
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+}
+
+.hero-slider .splide,
+.hero-slider .splide__track,
+.hero-slider .splide__list,
+.hero-slider .splide__slide {
+  width: 100%;
+  height: 100%;
+}
+
+.hero-slider .splide__slide {
+  position: relative;
+}
+
+.hero-slide-bg {
+  position: absolute;
+  inset: 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: transform 6s ease-in-out;
+}
+
+/* Add zoom effect during slide transition */
+.splide__slide.is-active .hero-slide-bg {
+  transform: scale(1.1);
+}
